@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8E6FF"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image1329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/logoImage"
+        app:layout_constraintEnd_toStartOf="@+id/cartButton"
+        app:layout_constraintStart_toEndOf="@+id/logoImage"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
+
+    <ImageButton
+        android:id="@+id/cartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/image8"
+        app:layout_constraintBottom_toBottomOf="@+id/logoImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/shirtsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="camisetas"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/shirt1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image55"
+                app:layout_constraintEnd_toStartOf="@+id/shirt2"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shirtsTitle" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$100.000"
+                app:layout_constraintEnd_toEndOf="@+id/shirt1"
+                app:layout_constraintStart_toStartOf="@+id/shirt1"
+                app:layout_constraintTop_toBottomOf="@+id/shirt1" />
+
+            <ImageView
+                android:id="@+id/shirt2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image31"
+                app:layout_constraintEnd_toStartOf="@+id/shirt3"
+                app:layout_constraintStart_toEndOf="@+id/shirt1"
+                app:layout_constraintTop_toTopOf="@+id/shirt1" />
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$45.000"
+                app:layout_constraintEnd_toEndOf="@+id/shirt2"
+                app:layout_constraintStart_toStartOf="@+id/shirt2"
+                app:layout_constraintTop_toBottomOf="@+id/shirt2" />
+
+            <ImageView
+                android:id="@+id/shirt3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image51"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/shirt2"
+                app:layout_constraintTop_toTopOf="@+id/shirt2" />
+
+            <TextView
+                android:id="@+id/price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$88.000"
+                app:layout_constraintEnd_toEndOf="@+id/shirt3"
+                app:layout_constraintStart_toStartOf="@+id/shirt3"
+                app:layout_constraintTop_toBottomOf="@+id/shirt3" />
+
+            <TextView
+                android:id="@+id/pantsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Pantalones"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price1" />
+
+            <ImageView
+                android:id="@+id/pants1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image80"
+                app:layout_constraintEnd_toStartOf="@+id/pants2"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pantsTitle" />
+
+            <TextView
+                android:id="@+id/price4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$240.000"
+                app:layout_constraintEnd_toEndOf="@+id/pants1"
+                app:layout_constraintStart_toStartOf="@+id/pants1"
+                app:layout_constraintTop_toBottomOf="@+id/pants1" />
+
+            <ImageView
+                android:id="@+id/pants2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image81"
+                app:layout_constraintEnd_toStartOf="@+id/pants3"
+                app:layout_constraintStart_toEndOf="@+id/pants1"
+                app:layout_constraintTop_toTopOf="@+id/pants1" />
+
+            <TextView
+                android:id="@+id/price5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$74.000"
+                app:layout_constraintEnd_toEndOf="@+id/pants2"
+                app:layout_constraintStart_toStartOf="@+id/pants2"
+                app:layout_constraintTop_toBottomOf="@+id/pants2" />
+
+            <ImageView
+                android:id="@+id/pants3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image93"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pants2"
+                app:layout_constraintTop_toTopOf="@+id/pants2" />
+
+            <TextView
+                android:id="@+id/price6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="$120.000"
+                app:layout_constraintEnd_toEndOf="@+id/pants3"
+                app:layout_constraintStart_toStartOf="@+id/pants3"
+                app:layout_constraintTop_toBottomOf="@+id/pants3" />
+
+            <ImageView
+                android:id="@+id/bottomImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/image05"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
